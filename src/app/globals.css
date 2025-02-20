@@ -2,20 +2,98 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* html {
+    scroll-snap-type: y mandatory;
+} */
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+    :root {
+        /* Base Colors */
+        --background-primary: #2a2a2e; /* warm-charcoal */
+        --text-primary: #ff9eaa; /* dusty-rose */
+        --text-white: #f5f5f5; /* white */
+
+        /* Brand Colors */
+        --brand-primary: #ff9eaa; /* dusty-rose */
+        --brand-secondary: #5f8a8b; /* muted-teal */
+        --brand-tertiary: #ffb95f; /* soft-amber */
+
+        /* Accent Colors */
+        --accent-purple: #9d8df1; /* gentle-purple */
+        --accent-coral: #ff7f6a; /* faded-coral */
+        --accent-gold: #ddb967; /* muted-gold */
+        --accent-cyan: #7de2d1; /* soft-cyan */
+
+        /* UI Colors */
+        --ui-gray-100: rgba(245, 245, 245, 0.1); /* overlay-light */
+        --ui-gray-200: rgba(42, 42, 46, 0.2); /* overlay-dark */
+        --ui-gray-300: rgba(95, 138, 139, 0.3); /* overlay-teal */
+
+        /* Gradient Colors */
+        --gradient-dark: linear-gradient(
+            135deg,
+            #2a2a2e 0%,
+            #1a1a2e 100%
+        ); /* dark-to-navy */
+        --gradient-rose: linear-gradient(
+            135deg,
+            #ff9eaa 0%,
+            #9d8df1 100%
+        ); /* rose-to-purple */
+        --gradient-teal: linear-gradient(
+            135deg,
+            #5f8a8b 0%,
+            #2a2a2e 100%
+        ); /* teal-to-charcoal */
+
+        /* Component Colors */
+        --button-primary: var(--brand-primary);
+        --button-secondary: var(--brand-secondary);
+        --card-background: var(--background-primary);
+        --input-border: var(--brand-primary);
+
+        /* Text Colors */
+        --text-secondary: var(--brand-secondary);
+        --text-accent: var(--brand-primary);
+        --text-muted: rgba(245, 245, 245, 0.6);
+    }
+    .dark {
+        --background: 0 0% 3.9%;
+        --foreground: 0 0% 98%;
+        --card: 0 0% 3.9%;
+        --card-foreground: 0 0% 98%;
+        --popover: 0 0% 3.9%;
+        --popover-foreground: 0 0% 98%;
+        --primary: 0 0% 98%;
+        --primary-foreground: 0 0% 9%;
+        --secondary: 0 0% 14.9%;
+        --secondary-foreground: 0 0% 98%;
+        --muted: 0 0% 14.9%;
+        --muted-foreground: 0 0% 63.9%;
+        --accent: 0 0% 14.9%;
+        --accent-foreground: 0 0% 98%;
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 0 0% 98%;
+        --border: 0 0% 14.9%;
+        --input: 0 0% 14.9%;
+        --ring: 0 0% 83.1%;
+        --chart-1: 220 70% 50%;
+        --chart-2: 160 60% 45%;
+        --chart-3: 30 80% 55%;
+        --chart-4: 280 65% 60%;
+        --chart-5: 340 75% 55%;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
 }

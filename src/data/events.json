@@ -1,0 +1,48 @@
+{
+  "events": [
+    {
+      "date": "Jan 15, 2024",
+      "time": "2:00 PM",
+      "title": "Web Dev Workshop",
+      "subtitle": "Learn Next.js & React",
+      "description": "Comprehensive workshop on modern web development...",
+      "type": "lecture",
+      "venue": "Tech Hall 101",
+      "speakers": ["John Doe"],
+      "registration": "https://register.com"
+    },
+    {
+      "date": "Jan 15, 2024",
+      "time": "2:00 PM",
+      "title": "Web Dev Workshop",
+      "subtitle": "Learn Next.js & React",
+      "description": "Comprehensive workshop on modern web development...",
+      "type": "lecture",
+      "venue": "Tech Hall 101",
+      "speakers": ["John Doe"],
+      "registration": "https://register.com"
+    },
+    {
+      "date": "Jan 15, 2024",
+      "time": "2:00 PM",
+      "title": "Web Dev Workshop",
+      "subtitle": "Learn Next.js & React",
+      "description": "Comprehensive workshop on modern web development...",
+      "type": "lecture",
+      "venue": "Tech Hall 101",
+      "speakers": ["John Doe"],
+      "registration": "https://register.com"
+    },
+    {
+      "date": "Jan 15, 2024",
+      "time": "2:00 PM",
+      "title": "Web Dev Workshop",
+      "subtitle": "Learn Next.js & React",
+      "description": "Comprehensive workshop on modern web development...",
+      "type": "lecture",
+      "venue": "Tech Hall 101",
+      "speakers": ["John Doe"],
+      "registration": "https://register.com"
+    }
+  ]
+}
